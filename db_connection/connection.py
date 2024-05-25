@@ -44,10 +44,10 @@ db = PostgresConnection(dbname='postgres', user='postgres', password='postgres')
 db.connect()
 
 
-query = "SELECT * FROM xdr_data"
-result = db.execute_query(query)
+#query = "SELECT * FROM TgBank"
+#result = db.execute_query(query)
 
 
-df = pd.DataFrame(result, columns=[desc[0] for desc in db.cursor.description])
+#df = pd.DataFrame(result, columns=[desc[0] for desc in db.cursor.description])
 
-db.close_connection()
+#db.close_connection()
